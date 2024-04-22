@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewpoint"
+content="width=device-width,
+initial-scale=1">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+:root{
+--color: #333; 
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.container {
+  text-align: center;
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+  background-size: cover;
+  background-position: center;
+  
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+.blank,
+.other {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--color);
+}
+
+.second {
+  background-image:url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-attachment: fixed;
+  height: 1200px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.card > a {
+  margin-bottom: 2em;
+}
+
+.item {
+  display: flex;
+  max-width: 320px;
+  background-color: white;;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+.img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: .3em;;
+}
+
+.img-first {
+  background-image: url(https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1606&q=80);
+}
+
+.img-second {
+  background-image: url(https://images.unsplash.com/photo-1628746404106-4d3843b231b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2F2aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60);
+}
+
+.img-third {
+  background-image: url(https://images.unsplash.com/photo-1632853073412-782bf0279d65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }.centered {
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+    button{
+    background-color:#008CBA;
+    padding:10px 28px;
+    }
+    
+    marquee{
+    width :40%;
+    direction: right;
+    height: 30;
+    }
+    img{
+     border-radius: 3%;
+    }
+    
+    
+    div{
+    text-align:center;
+    font-color: grey;
+    font-family: sans-serif}
+    
+    body {background-color:black;
+     margin:0;
+    font-family:sans-serif;
+    }
+    .topnav{
+    overflow: hidden;
+    background-color:#333;
+    }
+    .topnav a{
+    float:left;
+    color: #f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size:17px;
+    }
+    .topnav a:hover{
+    background-color: #ddd;
+    color: black;
+    }
+    .topnav a.active{
+    background-color: #14AA6D;
+    color: white;}
+    
+    h1 {text-align: center;
+    font-size:50px;
+    font-family:serif;
+    background: -webkit-linear-gradient(45deg,green,yellow);
+     -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    }
+    p{text-align: center;
+    }
+    i{color:grey;
+    font-size:100%}
+    r{color:grey;
+    font-size: 19px;
+    background: -webkit-linear-gradient(45deg,white,grey,white);
+     -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    }
+    w{
+    font-color:grey}
+
+    h3{
+    font-size: 30px;
+    background: -webkit-linear-gradient(45deg,red,orange);
+     -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;}
+    h2{
+    font-size: 30px;
+    background: -webkit-linear-gradient(50deg,darkgreen,green,yellow);
+     -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-family:sans-serif;
+    }
+</style>
+</head>
+<body>
+    
+      
+<img src=""https://ibb.co/Pw0rSzR"><img src="https://i.ibb.co/BqFf1Km/tmosoft.jpg" alt="tmosoft" " border="0" width=10%;>    <i>~The unstinted Pursuit Of Excellence...</i>
+<div class='topnav'>
+<a class=''active"
+<a href="https://kunalsingh5276.wixsite.com/mysite"></span>Home</a>
+<a href="https://www.google.co.in/">&phone;search</a>
+<a href="https://www.instagram.com/accounts/login/">&#127744</span>instagram Log in</a>
+<a href="https://m.hindustantimes.com">#News</a>
+</div>
+<div style="padding-left:16px">
+    <div class="container">
+        <img src="https://th.bing.com/th/id/R.5d60e055997ecdfd9dbf32d7d4252c25?rik=cYg%2feRwxzA0ZOQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fe%2fe%2f6%2f271022.jpg&ehk=OnScAn0zavtkJcwGduhTyyc%2bNMd6sTpqwdxUhAR7wkg%3d&risl=&pid=ImgRaw&r=0" alt="Snow" style="width:95%;">
+        <div class="centered">Atmosoft&trade;</br>
+        Explore Emerge Experience</div>
+      </div>
+      
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Let's Begin</h3>
+          </div>
+        </div>
+      </div>
+    </br>
+  </br>
+      <div class="container">
+        <h1>Presenting The Atmosoft World </h1>
+        <p>Atmosoft of exceptional beauty whose special geographical properties have made this mountain a real gem of western Serbia.</p>
+        <a href="#">Learn more</a>
+      </div>
+      
+      <div class="blank"></div>
+      
+      <div class="container second">
+        <div class="item">
+          <div class="img img-first"></div>
+          <div class="card">
+            <h3>Web designing</h3>
+            <p>The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      
+        <div class="item">
+          <div class="img img-second"></div>
+          <div class="card">
+            <h3>Android developing</h3>
+            <p>Exploring underground through networks of tunnels and passageways, which can be natural or artificial intelligence.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img img-third"></div>
+          <div class="card">
+            <h3>Computer Graphics</h3>
+            <p>Jumping from an aeroplane and falling through the air before opening your parachute.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blank"></div>
+<h2><u>THE</br>SPEED YOU NEED!...</u></h2>
+ <img src="https://tinypic.host/images/2023/09/13/-speed.gif" alt="-speed.gif" border="0" width = 60%>
+<h2><u>THE</br>SPACE YOU NEED!...</u></h2>
+</br>
+</br>
+<img src="https://tinypic.host/images/2023/09/13/SPACE.gif" alt="SPACE.gif" border="5"  width=60% >
+<h1>To Know More,
+Explore More!.. </h1>
+</br>
+</br>
+</br>
+<h3> Every Day.More Extraordinary</h3>
+<p><r>@tmosoft brings new features to enhance the things you do every day.</br>Express yourself like never before when you call or message someone.</br>Share content in convenient new ways.And do even more with new experiences for your journey.</r></p>
+<button onclick="myFunction()">Read More</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+document.getElementById("demo").innerHTML ="<r>Believe - while others are doubting</br> Plan  - while others are playing.</br>Study  - while others are sleeping.</r>";}
+</script>
+</br>
+</br>
+</br> 
+<h2> Anytime, Anywhere Explore the World</h2>
+<p><r>Introducing card-style design on your display just help to present your information more effectively,</br> just like Post-it notes but only more organised...</r><p>
+</br>
+<iframe 
+width="450" 
+height="350" 
+src="https://g.co/kgs/Rb9xNS">
+</iframe>
+</br>
+</br>
+<h3>Flexible and Intuitive Design</h3>
+<p><r>Introducing Connect devices seamlessly and switch in a snap</r><p>
+<button onclick="myFunction()">Read More</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+document.getElementById("demo").innerHTML ="<r>Decide - while others are delaying </br>Prepare - while others are daydreaming.</br>Begin- while others are procastinating.</r>";}
+</script>
+</br>
+</br>
+</br>
+<h3>Still good as new as time goes by</h3>www.google.com refused to connect.
+ <p><r> Your data is with you and you only since they will be fully processed on your own device</r><p>
+<iframe 
+width="950" 
+height="450" 
+src="https://www.google.com/intl/en_in/earth/">
+</iframe>
+<h3> Our work your trust </h3>
+</br>
+<img src="https://i.ibb.co/FqpWv27/1694856524341.png" border="0" width=40%>
+</br>
+<h3>Think outside the boundations</h3>
+<img src="https://wallpapercave.com/wp/wp2506831.jpg"  border="0" width=70% ></br>
+
+<div id= footer ><i>
+ &copy; 2023 Atmosoft&trade;
+ All rights are reserved!</i>
+ </div>
+
+
+</body>
+</html>
